@@ -1,0 +1,193 @@
+Technical Notes
+1.Front-end – User interface
+(visual part, client side)
+create a website, designs, layouts
+(html, css, js, react.js)
+•	HTML (Hyper-text markup language):
+o	Text -content
+o	Hyper-text -A text containing multiple links (hyper-links--navigate to the next page)
+o	Markup language – specific set of tags by using this we can create content on the website
+o	Can create structured content on the websites
+o	Head cannot be visible to user
+•	CSS (Cascading Style Sheet):
+o	Used to make website in an attractive and animated way
+o	Used to add styles (font, position, style, size, shape)
+	Static websites: (html, css) 
+	Dynamic web sites: facebook, youtube, google maps,
+•	React.js: 
+2.Backend:
+•	Communication between the front end and database.
+3.Database:
+•	Stores data permanently.
+
+
+1)	JS (Java Script):
+o	Used for dynamic websites
+o	Functioning
+o	Events
+o	Loosely coupled
+o	Variables: Stores the data (let, var, const)
+o	Scripting language
+o	High-level programming language
+o	Light-weight and dynamic language
+o	Directly interpreted
+o	let a=10;
+o	Used to build user interface
+o	Introduced in 1995 by Brenden eich.
+o	Netscape navigator
+o	First js program “Mocha” was developed within 7-8 day.
+o	Initial name of java-script is live-script
+
+	Applications:
+	Mobile apps, Smartwatch, gaming, web apps, server-side apps, data(mongo).
+
+•	Variables:
+o	Containers/ memory blocks to store data
+o	Types: var (1995) (old version)
+o	let(2015-es6), 
+o	const
+o	Case-sensitive
+o	Start with letters, _ (under-score), $(dollar)
+o	Cannot start with numbers
+o	Reserved words (key words) not allowed
+o	Allow letters, _, $, numbers
+	var a=10;
+	console.log(a);
+	Memories present in 
+	static area
+	class static method
+	stack area
+	heap area
+•	Identifiers:
+o	Names given for memory.
+
+•	Reassigning variables possible by var.
+•	var name="abc"
+•	        // name="jyoshna"
+•	        // name="xyz"
+•	        // console.log(name)
+•	        // console.log(name)
+•	        // document.write(name)
+
+•	Reassigning variables possible by let.
+
+ let a=1
+        // a=5
+        // a=a+a
+        // console.log(a+a)
+
+•	Reassigning variables not possible by const.
+•	 const a=5
+•	        a=2
+•	        a=a+a
+•	        console.log(a+a)
+•	Redeclaring with var is accepted.
+•	// var name="abc"
+•	        // var name="poojitha"
+•	        // console.log(name)
+•	        // document.write(name)
+
+•	Redeclaring with let is not accepted.
+
+// let a=10;
+        // let a=1;
+        // document.write(a+a)
+        // console.log(a+a)
+
+•	Redeclaring with const is not accepted.
+                const a=3
+        const a=5
+        console.log(a+a)
+        document.write(a+a)
+
+•	Block scope:
+	Let can have block scope where two names will print.
+	let a="poojitha"
+	        {
+	            let a="jyoshna"
+	            console.log(a)
+	        }
+	        console.log(a)
+
+	Var cannot have block scope where it takes the updated value.
+
+ var a="poojitha"
+        {
+            var a="jyoshna"
+            console.log(a)
+        }
+        console.log(a)
+
+	Const cannot have blocks code.
+
+
+VS Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var name="abc"
+        // name="jyoshna"
+        // name="xyz"
+        // console.log(name)
+        // console.log(name)
+        // document.write(name)
+
+        // let a=1
+        // a=5
+        // a=a+a
+        // console.log(a+a)
+
+        // const a=5
+        // a=2
+        // a=a+a
+        // console.log(a+a)
+
+        // let a=10;
+        // let a=1;
+        // document.write(a+a)
+        // console.log(a+a)
+
+        // var name="abc"
+        // var name="poojitha"
+        // console.log(name)
+        // document.write(name)
+
+        // const a=3
+        // const a=5
+        // console.log(a+a)
+        // document.write(a+a)
+
+        // let a="poojitha"
+        // {
+        //     let a="jyoshna"
+        //     console.log(a)
+        //     document.write(a,"<br>")
+        // }
+        // console.log(a)
+        // document.write(a)
+
+        // var a="poojitha"
+        // {
+        //     var a="jyoshna"
+        //     console.log(a)
+        // }
+        // console.log(a)
+
+        // let a=11
+        // {
+        //     let a=5
+        //     console.log(a+a)
+        // }
+        // console.log(a+a)
+
+        
+    </script>
+</body>
+</html>
