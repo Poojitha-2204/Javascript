@@ -1,0 +1,69 @@
+Data Types: Primitive, Non-Primitive (to check the datatype- typeof)
+•	Primitive: predefined, we can store single values
+•	Numbers: integers, float
+•	String: Stream of Characters enclosed in quotes (single, double, backtick quotes)
+•	Boolean: true or false
+•	Null: empty value or no value
+ let x=null
+    document.write(x, "<br>")
+    document.write(typeof(x))
+
+•	Undefined: declared variable with no value
+1.	Numbers: Ex: 1, -1,4.4, -5.5
+2.	String: Stream of characters enclosed in quotes
+	Single and double work same.
+	Back ticks introduced in ES6.
+	Provides extra functionalities. We can insert variables into them.
+ Let b=3.5
+        let a=3.5
+        console.log(typeof(a))
+        console.log(typeof(b))
+        console.log(`hi +${a+b}`)
+        document.write(`hi +${a+b}`,’<br>’)
+        document.write(`hi +${b+a}`)
+
+	When string and number are added then we won’t get any error JS accept the values.
+ let b=3.5
+        let a='3.5'
+        document.write(a+b)
+
+String Concatenation:
+ let a="Sree"
+    let b="Poojitha"
+    let age=19
+    let greeting=`I am ${a+" "+b}, My age is ${age} years old`
+    console.log(greeting)
+    document.write(greeting)
+
+VS CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let b=3.5
+    //     let a='3.5'
+    //     document.write(a+b)
+    //     console.log(typeof(a))
+    //     console.log(typeof(b))
+    //     console.log(`hi +${a+b}`)
+    //     document.write(`hi +${a+b}`,'<br>')
+    //     document.write(`hi +${b+a}`)
+
+    // let a="Sai"
+    // let b="kumar"
+    // let age=19
+    // let greeting=`Recat Student: ${a+" "+b}`
+    // console.log(greeting)
+    // document.write(greeting)
+
+    // let x=null
+    // document.write(x, "<br>")
+    // document.write(typeof(x))
+    </script>
+</body>
+</html>
