@@ -1,0 +1,249 @@
+Operators:
+1.	Arithmetic: +, -, *
+•	Multiplication: *
+•	Division: / (Q)
+•	Modulus Operator: %(R)
+•	Exponential: **(Raised to power)
+•	++, --
+
+  let a=10
+    let b=5
+    b++
+    a--
+    document.write(a%b, "<br>")
+    document.write(a/b, "<br>")
+    document.write(a*b, "<br>")
+    document.write(a**b, "<br>")
+
+
+2.	Assignment operators:
+•	+=, -=, /=, %=
+ let a=10
+    let b=5
+    b-=30
+    document.write(b, "<br>")
+    a+=30
+    document.write(a)
+
+3.	Logical Opertors:
+•	And -&&(T and T =T)
+•	Or - || (T or F =T)
+•	Not- !
+ let a=10
+    let b=5
+    document.write(a>b && b>11, "<br>")
+    document.write(a>b || b>11, "<br>")
+    document.write(!(a<b) && (a>11), "<br>")
+    document.write(!true, "<br>")
+    document.write(!(a>b))
+
+
+
+
+
+4.	Relational (Comparision) values:
+•	<, >, <=, >=, == (check only values) ,!=, ===(check values and datatype), !==
+ let a=105
+    let b='105'
+    document.write(a==b, "<br>")
+    document.write(a!=b, "<br>")
+    document.write(a!==b, "<br>")
+    document.write(a===b, "<br>")
+    let c=105
+    document.write(a===c, "<br>")
+    document.write(a==c, "<br>")
+    document.write(a!=c, "<br>")
+    document.write(a!==c, "<br>")
+
+==		- EQUALITY
+Conditional operator	; Ternary operator(?)
+First evaluates an expression for true or false;
+Syntax:
+Conditional? e1: e2 
+let t=40
+    let r=(t>40) ? "Ac -off":"Ac -on"
+    document.write(r)
+
+WINDOW METHODS
+•	Alert(): to print an alert message
+ alert("hi")
+    // console.log(alert)
+    // document.write(alert)
+
+•	Prompt(): to take the input from the user
+                    By default it will accept input as a string. So we need to verify it and typecast to use
+let aa=prompt()
+    //   let bb=prompt()
+    //   document.write(aa+bb)
+    //   console.log(aa+bb)
+
+    // let name=prompt("enter ur name:")
+    //   alert(name)
+    //   console.log(name)
+    //   document.write(name)
+
+•	Confirm():
+
+Operators:
+1.	Arithmetic: +, -, *
+•	Multiplication: *
+•	Division: / (Q)
+•	Modulus Operator: %(R)
+•	Exponential: **(Raised to power)
+•	++, --
+
+  let a=10
+    let b=5
+    b++
+    a--
+    document.write(a%b, "<br>")
+    document.write(a/b, "<br>")
+    document.write(a*b, "<br>")
+    document.write(a**b, "<br>")
+
+
+2.	Assignment operators:
+•	+=, -=, /=, %=
+ let a=10
+    let b=5
+    b-=30
+    document.write(b, "<br>")
+    a+=30
+    document.write(a)
+
+3.	Logical Opertors:
+•	And -&&(T and T =T)
+•	Or - || (T or F =T)
+•	Not- !
+ let a=10
+    let b=5
+    document.write(a>b && b>11, "<br>")
+    document.write(a>b || b>11, "<br>")
+    document.write(!(a<b) && (a>11), "<br>")
+    document.write(!true, "<br>")
+    document.write(!(a>b))
+
+
+
+
+
+4.	Relational (Comparision) values:
+•	<, >, <=, >=, == (check only values) ,!=, ===(check values and datatype), !==
+ let a=105
+    let b='105'
+    document.write(a==b, "<br>")
+    document.write(a!=b, "<br>")
+    document.write(a!==b, "<br>")
+    document.write(a===b, "<br>")
+    let c=105
+    document.write(a===c, "<br>")
+    document.write(a==c, "<br>")
+    document.write(a!=c, "<br>")
+    document.write(a!==c, "<br>")
+
+==		- EQUALITY
+Conditional operator	; Ternary operator(?)
+First evaluates an expression for true or false;
+Syntax:
+Conditional? e1: e2 
+let t=40
+    let r=(t>40) ? "Ac -off":"Ac -on"
+    document.write(r)
+
+WINDOW METHODS
+•	Alert(): to print an alert message
+ alert("hi")
+    // console.log(alert)
+    // document.write(alert)
+
+•	Prompt(): to take the input from the user
+                    By default it will accept input as a string. So we need to verify it and typecast to use
+let aa=prompt()
+    //   let bb=prompt()
+    //   document.write(aa+bb)
+    //   console.log(aa+bb)
+
+    // let name=prompt("enter ur name:")
+    //   alert(name)
+    //   console.log(name)
+    //   document.write(name)
+
+•	Confirm():
+VS CODE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // let a=10
+    // let b=5
+    // b++
+    // a--
+    // document.write(a%b, "<br>")
+    // document.write(a/b, "<br>")
+    // document.write(a*b, "<br>")
+    // document.write(a**b, "<br>")
+
+    // let a=10
+    // let b=5
+    // a+=30
+    // document.write(a, "<br>")
+
+    // let a=10
+    // let b=5
+    // b-=30
+    // document.write(b, "<br>")
+    // a+=30
+    // document.write(a)
+
+    // let a=10
+    // let b=5
+    // document.write(a>b && b>11, "<br>")
+    // document.write(a>b || b>11, "<br>")
+    // document.write(!(a<b) && (a>11), "<br>")
+    // document.write(!true, "<br>")
+    // document.write(!(a>b))
+
+    // let a=105
+    // let b='105'
+    // document.write(a==b, "<br>")
+    // document.write(a!=b, "<br>")
+    // document.write(a!==b, "<br>")
+    // document.write(a===b, "<br>")
+    // let c=105
+    // document.write(a===c, "<br>")
+    // document.write(a==c, "<br>")
+    // document.write(a!=c, "<br>")
+    // document.write(a!==c, "<br>")
+
+    // let t=39
+    // let r=(t>40) ? "Ac -off":"Ac -on"
+    // document.write(r)
+
+    // alert("hi")
+    // console.log(alert)
+    // document.write(alert)
+
+    // let aa=prompt()
+    //   let bb=prompt()
+    //   document.write(aa+bb)
+    //   console.log(aa+bb)
+
+    // let name=prompt("enter ur name:")
+    //   alert(name)
+    //   console.log(name)
+    //   document.write(name)
+
+    let aa=parseInt()
+    let bb=prompt()
+    console.log(typeof(aa))
+    ducument.write(typeof(aa))
+    console.log(typeof(aa+bb))
+    </script>
+</body>
+</html>
