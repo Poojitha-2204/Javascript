@@ -1,0 +1,119 @@
+Conditional Statements: 
+•	Executed based on the condition
+•	To make the set of instructions (block of code) (conditional block) execute only when the condition is true.
+•	Used to decide whether the code has to be executed or skipped based on the given condition.
+•	Line by line
+•	Condition: An expression that evaluates an result(True or False).
+•	Console.log(5>6)
+•	Methode:
+	If
+If(condition){
+Block of code
+}
+  let a=4
+        let b=5
+        if(a<b){
+            document.write("Hello","<br>")
+        }
+        document.write("Hi")
+
+	If-else
+    if(a>b){
+            document.write("Hello","<br>")
+        }
+        else{
+            document.write("Hi  ")
+        }
+        document.write("Poojitha")
+
+
+
+
+
+
+
+	Else-if
+let age=prompt("Enter age: ")
+        let name=prompt("Enter name: ")
+        if(age<18){
+            alert(name+ " you are too young to marry")
+        }
+        else if(age>35){
+            alert(name+ " you are too old to marry")
+        }
+        else{
+            alert(name+ " perfect age to marry")
+        }
+        alert("welcome to my world")
+
+	Switch
+	Ternary operator
+
+VS CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a=4
+        // let b=5
+        // if(a<b){
+        //     document.write("Hello","<br>")
+        // }
+        // document.write("Hi")
+
+        let a=4
+        let b=5
+        // if(a>b){
+        //     document.write("Hello","<br>")
+        // }
+        // else{
+        //     document.write("Hi  ")
+        // }
+        // document.write("Poojitha")
+
+        // let age=prompt("Enter age: ")
+        // let name=prompt("Enter name: ")
+        // if(age<18){
+        //     alert(name+ " you are too young to marry")
+        // }
+        // else if(age>35){
+        //     alert(name+ " you are too old to marry")
+        // }
+        // else{
+        //     alert(name+ " perfect age to marry")
+        // }
+        // alert("welcome to my world")
+
+        
+       
+    </script>
+</body>
+</html>
+
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let A = number(prompt("Enter the score A: "))
+        let B = number(prompt("Enter the score B: "))
+        if((A>300 || B>300) && A+B<500){
+            alert("Team Up")
+            document.write("Team Up")
+        }
+        else{
+            alert("Cannot Team Up")
+            document.write("Cannot Team Up")
+        }
+    </script>
+</body>
+</html>
