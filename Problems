@@ -1,0 +1,210 @@
+•	Program to check whether the numbers is divisible by 2 and 3 and both.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let A = parseInt(prompt("Enter the number: "))
+         if(A%2==0 && A%3==0){
+            alert("The number is divisible by both 2 and 3")
+         }
+        else if(A%2 ==0){
+            alert("The number is divisible by 2")
+        }
+        else if(A%3 == 0){
+            alert("The number is divisible by 3")
+        }
+        else{
+            alert("The number is not divisible by 2 or 3")
+        }
+    </script>
+</body>
+</html>
+
+•	To find the largest number out of 3 numbers expected from the user.
+•	<!DOCTYPE html>
+•	<html lang="en">
+•	<head>
+•	    <meta charset="UTF-8">
+•	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+•	    <title>Document</title>
+•	</head>
+•	<body>
+•	    <script>
+•	
+•	        let A = parseInt(prompt("Enter value A: "))
+•	        let B = parseInt(prompt("Enter value B: "))
+•	        let C = parseInt(prompt("Enter value C: "))
+•	        if(A>B && A>C){
+•	            alert("Value of A is largest")
+•	        }
+•	        else if(B>A && B>C){
+•	            alert("Value of B is largest")
+•	        }
+•	        else if(C>A && C>B){
+•	            alert("Value of C is largest")
+•	        }
+•	        else{
+•	            alert("Equal")
+•	        }
+•	    </script>
+•	</body>
+•	</html>
+
+
+•	Accept the following from the user and calculate the percentage of classes attended:
+Total number of working days
+Total number of absent
+After calculating percentage show that if the percentage is less than 75 then the student is not be eligible to write exam.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        let A =parseInt(prompt("Enter the total days: "))
+        let B = parseInt(prompt("Enter the absent days: "))
+        percentage=((A-B)/A)*100
+        if(percentage>=75){
+            alert("Student is eligible to write the exam")
+        }
+        else {
+            alert("Student is not eligible to write exam")
+        
+        }
+    </script>
+</body>
+</html>
+
+
+
+•	A company decided to give bonus to employees according to the following criteria:
+More than 10 years: 10%
+>=6 and <=10: 8%
+<6 years: 5%
+Ask the user for their salary and print the bonus amount.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Salary =parseInt(prompt("Enter the salary: "))
+        let Years  =parseInt(prompt("Enter the Years: "))
+        if(Years>10){
+            bonus=(Salary*10)/100
+            alert("Bonus amount is: "+bonus)
+            Total_Salary=Salary+bonus
+            alert("Total salary is: "+Total_Salary)
+        }
+        else if(Years>=6 && Years<=10){
+            bonus=(Salary*8)/100
+            alert("Bonus amount is: "+bonus)
+            Total_Salary=Salary+bonus
+            alert("Total salary is: "+Total_Salary)
+        }
+        else if(Years<6){
+            bonus=(Salary*5)/100
+            alert("Bonus amount is: "+bonus)
+            Total_Salary=Salary+bonus
+            alert("Total salary is: "+Total_Salary)
+        }
+        else{
+            alert("Invalid input")
+        }
+    </script>
+</body>
+</html>
+
+
+VS CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  let A = parseInt(prompt("Enter the number: "))
+        //  if(A%2==0 && A%3==0){
+        //     alert("The number is divisible by both 2 and 3")
+        //  }
+        // else if(A%2 ==0){
+        //     alert("The number is divisible by 2")
+        // }
+        // else if(A%3 == 0){
+        //     alert("The number is divisible by 3")
+        // }
+        // else{
+        //     alert("The number is not divisible by 2 or 3")
+        // }
+
+        // let A = parseInt(prompt("Enter value A: "))
+        // let B = parseInt(prompt("Enter value B: "))
+        // let C = parseInt(prompt("Enter value C: "))
+        // if(A>B && A>C){
+        //     alert("Value of A is largest")
+        // }
+        // else if(B>A && B>C){
+        //     alert("Value of B is largest")
+        // }
+        // else if(C>A && C>B){
+        //     alert("Value of C is largest")
+        // }
+        // else{
+        //     alert("Equal")
+        // }
+
+        // let A =parseInt(prompt("Enter the total days: "))
+        // let B = parseInt(prompt("Enter the absent days: "))
+        // percentage=((A-B)/A)*100
+        // if(percentage>=75){
+        //     alert("Student is eligible to write the exam")
+        // }
+        // else {
+        //     alert("Student is not eligible to write exam")
+        
+        // }
+
+        let Salary =parseInt(prompt("Enter the salary: "))
+        let Years  =parseInt(prompt("Enter the Years: "))
+        if(Years>10){
+            bonus=(Salary*10)/100
+            alert("Bonus amount is: "+bonus)
+            Total_Salary=Salary+bonus
+            alert("Total salary is: "+Total_Salary)
+        }
+        else if(Years>=6 && Years<=10){
+            bonus=(Salary*8)/100
+            alert("Bonus amount is: "+bonus)
+            Total_Salary=Salary+bonus
+            alert("Total salary is: "+Total_Salary)
+        }
+        else if(Years<6){
+            bonus=(Salary*5)/100
+            alert("Bonus amount is: "+bonus)
+            Total_Salary=Salary+bonus
+            alert("Total salary is: "+Total_Salary)
+        }
+        else{
+            alert("Invalid input")
+        }
+    </script>
+</body>
+</html>
