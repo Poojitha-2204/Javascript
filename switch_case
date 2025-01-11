@@ -1,0 +1,110 @@
+•	Electricity Bill:
+0-50 units- 2 
+51-150 units- 3
+151-250- 5
+Above- 8
+#450
+50*2=100
+100*3=300
+100*5=500
+200*8=1600
+Bill=2500
+Total=2500+(2500*0.2) =3000
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let u=parseInt(prompt("Enter units: "))
+        if(u<=50 && u>=0){
+            let c=u*2
+            alert("Cost is: "+c)
+            Total=(c*20)/100
+            alert("Total is: "+Total)
+            total_charges=c+Total
+            alert("Total charges is: "+total_charges)
+        }
+        else if(u>50 && u<=150){
+            let c=(50*2)+(u-50)*3
+            alert("Cost is: "+c)
+            Total=(c*20)/100
+            alert("Total is: "+Total)
+            total_charges=c+Total
+            alert("Total charges is: "+total_charges)
+        }
+        else if(u>150 && u<=250){
+            let c=(50*2)+100*3+(u-150)*5
+            alert("Cost is: "+c)
+            Total=(c*20)/100
+            alert("Total is: "+Total)
+            total_charges=c+Total
+            alert("Total charges is: "+total_charges)
+        }
+        else if(u>=250){
+            let c=(50*2)+(100*3)+(100*5)+(u-250)*8
+            alert("Cost is: "+c)
+            Total=(c*20)/100
+            alert("Total is: "+Total)
+             total_charges=c+Total
+            alert("Total charges is: "+total_charges)
+        }
+        else{
+            alert("Invalid input")
+        }
+    </script>
+</body>
+</html>
+
+•	 Number of Handshake done 
+•	<!DOCTYPE html>
+•	<html lang="en">
+•	<head>
+•	    <meta charset="UTF-8">
+•	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+•	    <title>Document</title>
+•	</head>
+•	<body>
+•	    <script>
+
+•	       
+
+•	        let n=parseInt(prompt("Enter number of students:"))
+•	        let count=0
+•	        for(let i=1;i<=n;i++){
+•	            let handshake=n-i
+•	            count=count+handshake
+•	        }
+•	        document.write("Total handshakes are: "+count)
+•	    </script>
+•	</body>
+•	</html>
+
+VS CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       
+
+        let n=parseInt(prompt("Enter number of students:"))
+        let count=0
+        for(let i=1;i<=n;i++){
+            let handshake=n-i
+            count=count+handshake
+        }
+        document.write("Total handshakes are: "+count)
+    </script>
+</body>
+</html>
