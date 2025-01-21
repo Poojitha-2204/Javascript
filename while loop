@@ -1,0 +1,134 @@
+For in character:
+const a="ramya"
+        for(let i in a){
+            console.log(a[i])
+            document.write(a[i])
+        }
+
+Arrays:
+For of:
+   const b=["ramya","Sam","kavya"]
+        for(let bb of b){
+            console.log(b[bb])
+            document.write(b[bb])
+        }
+
+While loop:
+Syntax: While(condition){
+Block of code
+}
+Ex: 1-5
+  let i=1,n=5;
+        while(i<=n){
+            console.log(i)
+            document.write(i+"<br>")
+            i++;
+        }
+
+//1<=5,2<=5,3<=5,4<=5,5<=5
+//1,2,3,4,5
+//i=i+1//1+1=2,3,4,5,6
+
+
+Ex: 2-8
+ let i=2,n=8;
+        while(i<=n){
+            console.log(i+1)
+            document.write(i+1+"<br>")
+            i=i+2;
+        }
+
+//i=2<=8,4<=8,6<=8,8<=8
+//i+1=3,5,7,9
+//i=i+2//2+2=4,4+2=6,6+2=8,8+2=10
+
+do-while loop:
+let c=0
+        do{
+            console.log(c)
+            c++
+        }
+        while(c<5);
+#one time
+
+Break, continue:
+    for(let i=1;i<=8;i++){
+            if(i==4){
+                break;
+            }
+            console.log(i)
+        }
+//1,2,3
+
+//1,2,3
+
+
+
+  for(let i=2;i<=8;i=i+2){
+            if(i>4){
+                break;
+            }
+            console.log(i+1)
+        }
+
+//i=2<=8,4<=8
+//i+1=2+1=3,4+1=5
+//i=i+2=2+2=4,4+2=6
+
+
+
+
+VS CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  // const a="ramya"
+        // for(let i in a){
+        //     console.log(a[i])
+        //     document.write(a[i])
+        // }
+        // const b=["ramya","Sam","kavya"]
+        // for(let bb of b){
+        //     console.log(b[bb])
+        //     document.write(b[bb])
+        // }
+
+        // let i=1,n=5;
+        // while(i<=n){
+        //     console.log(i)
+        //     document.write(i+"<br>")
+        //     i++;
+        // }
+        // let i=2,n=8;
+        // while(i<=n){
+        //     console.log(i+1)
+        //     document.write(i+1+"<br>")
+        //     i=i+2;
+        // }
+        // let c=0
+        // do{
+        //     console.log(c)
+        //     c++
+        // }
+        // while(c<5);
+        // for(let i=1;i<=8;i++){
+        //     if(i==4){
+        //         break;
+        //     }
+        //     console.log(i)
+        // }
+        for(let i=2;i<=8;i=i+2){
+            if(i>4){
+                break;
+            }
+            console.log(i+1)
+        }
+</script>
+</body>
+</html>
