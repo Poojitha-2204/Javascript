@@ -1,0 +1,139 @@
+VS CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function greet(){
+        //     console.log("Hello, World!");
+        // }
+        // greet()
+        // console.log("Hi")
+        // greet()
+
+        // function g(name){
+        //     console.log(`Hello, ${name}!`);
+            
+        // }
+        // let name=prompt("Enter your name?")
+        // g(name)
+
+        // function add(){
+        //     console.log(a+b)
+        // }
+        // let a=parseInt(prompt("Enter first value: "))
+        // let b=parseInt(prompt("Enter second value: "))
+        // add(a,b)
+
+        // function a(aa,bb){
+        //     return aa+bb
+        // }
+        // let n1=parseFloat(prompt("Enter the num1: "))
+        // let n2=parseFloat(prompt("Enter the num2: "))
+        // let result=a(n1,n2)
+        // console.log("The sum is: "+result)
+
+        // sum=function(n1,n2){
+        //     let r=n1+n2
+        //     return r
+        // }
+        // console.log(sum(8,9))
+
+        let j=10;
+        for(let i=2;i<100;i++){
+            if(j%i==0){
+                console.log("not a prime number");
+                break;
+            }
+            console.log("prime numbers")
+        }
+
+    </script>
+</body>
+</html>
+
+Functions:
+•	A function is reusable block of code.
+•	It can be call anywhere in the program
+•	Reusable code: using an existing code with out writing it whenever we need.
+•	You can use same code with different arguments to get the results.
+•	Key word=function ()
+•	Parameters=values(variables) which are declared inside the () while defining a function.
+•	Arguments=values which are passed through the parameters at the time of calling the functions.
+•	Syntax:
+          Function greet(name)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(){
+            console.log("Hello, World!");
+        }
+        greet()
+        console.log("Hi")
+        greet()
+    </script>
+</body>
+</html>
+
+//Hello World
+//Hi
+//Hello World
+
+
+  function g(name){
+            console.log(`Hello, ${name}!`);
+            
+        }
+        let name=prompt("Enter your name?")
+        g(name)
+
+//Hello Poojitha
+
+Sum of two numbers:
+ function add(){
+            console.log(a+b)
+        }
+        let a=parseInt(prompt("Enter first value: "))
+        let b=parseInt(prompt("Enter second value: "))
+        add(a,b)
+
+//Enter first value: 2
+//Enter second value:1
+//3
+
+•	Function return:
+        Used to return the value to the function call
+
+function a(aa,bb){
+            return aa+bb
+        }
+        let n1=parseFloat(prompt("Enter the num1: "))
+        let n2=parseFloat(prompt("Enter the num2: "))
+        let result=a(n1,n2)
+        console.log("The sum is: "+result)
+
+
+
+
+
+•	Anonymous function:
+A function with out name, After we create a function without name and we assign it to a variable.
+
+sum=function(n1,n2){
+            let r=n1+n2
+            return r
+        }
+        console.log(sum(8,9))
+
+Write a program to check given number is prime or not ?
