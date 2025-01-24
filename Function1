@@ -1,0 +1,155 @@
+Arrow Functions:
+•	Es6 version
+•	More readable and more structure
+•	Anonymous Functions (lambda functions)
+•	Without function name but they are assigned to a variable
+•	No need of function keyword.
+•	Arrow function without parameter:
+  let c=()=>{
+            console.log("Hello, World!")
+        }
+        c()
+
+•	Arrow function with parameters:
+let x=(x,y)=>{
+            console.log(x+y)
+        }
+        x(20,30)
+        x(40,50)
+
+ let a=(x,y)=>{
+            document.write(x+y)
+        }
+       let x=parseInt(prompt("Enter x value:"))
+       let y=parseInt(prompt("Enter y value:"))
+       a(x,y)
+
+•	With one argument:
+// let greet=x=>console.log(x);
+    // greet("Hello, World!");
+
+//Without argument
+
+    let greet=()=>console.log("Hello, World!");
+    greet("Hello, World!");
+    </script>
+
+•	Ternary operator:
+let age=18;
+    let welcome=(age<18)?
+    ()=>console.log('Hello'):
+    ()=>console.log('Welcome')
+    welcome()
+
+ let age=11;
+    let welcome=(age<18)?
+    ()=>console.log('Hello'):
+    ()=>console.log('Welcome')
+    welcome()
+
+•	Synchronous function: 
+function task1(){
+        console.log("Task1: Start")
+    }
+    function task2(){
+        console.log("Task2: Start")
+    }
+    function task3(){
+        console.log("Task3: Start")
+    }
+    task1()
+    task2()
+    task3()
+•	Asynchronous function : won’t wait for before task
+console.log("Hello ")
+    setTimeout(()=>{
+        console.log("Iam waiting")
+    },5000)
+    console.log("Iam in lab")
+    </script>
+
+//Hello
+//I am in lab
+//I am waiting
+
+•	Callback function: It is a function that passed as an argument to an another function.
+function greet(name,callback){
+        console.log(`hello, ${name}!`)
+            callback();
+    }
+    function sayGoodbye(){
+        console.log('Goodbye!')
+    }
+    greet('John',sayGoodbye)
+
+VS CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrow function
+        // let c=()=>{
+        //     console.log("Hello, World!")
+        // }
+        // c()
+
+        // let x=(x,y)=>{
+        //     console.log(x+y)
+        // }
+        // x(20,30)
+        // x(40,50)
+
+    //     let a=(x,y)=>{
+    //         document.write(x+y)
+    //     }
+    //    let x=parseInt(prompt("Enter x value:"))
+    //    let y=parseInt(prompt("Enter y value:"))
+    //    a(x,y)
+
+    // let greet=x=>console.log(x);
+    // greet("Hello, World!");
+
+    // let greet=()=>console.log("Hello, World!");
+    // greet("Hello, World!");
+
+    // let age=11;
+    // let welcome=(age<18)?
+    // ()=>console.log('Hello'):
+    // ()=>console.log('Welcome')
+    // welcome()
+
+    // function task1(){
+    //     console.log("Task1: Start")
+    // }
+    // function task2(){
+    //     console.log("Task2: Start")
+    // }
+    // function task3(){
+    //     console.log("Task3: Start")
+    // }
+    // task1()
+    // task2()
+    // task3()
+
+    // console.log("Hello ")
+    // setTimeout(()=>{
+    //     console.log("Iam waiting")
+    // },6000)
+    // console.log("Iam in lab")
+
+    function greet(name,callback){
+        console.log(`hello, ${name}!`)
+            callback();
+    }
+    function sayGoodbye(){
+        console.log('Goodbye!')
+    }
+    greet('John',sayGoodbye)
+ </script>
+</body>
+</html>
