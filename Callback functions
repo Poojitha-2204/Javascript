@@ -1,0 +1,99 @@
+•	Callback function: It is a function that passed as an argument to an another function.
+function greet(name,callback){
+        console.log(`hello, ${name}!`)
+            callback();
+    }
+    function sayGoodbye(){
+        console.log('Goodbye!')
+    }
+    greet('John',sayGoodbye)
+
+Execution: the function receiving the callback will execute the callback at some point during its executions(often at the end or after asynchronous operation is done)
+function mainFunction(callback){
+        console.log("Main function executed")
+        callback()
+    }
+    function callbackFunction(){
+        console.log("Callback function executed")
+        }
+        mainFunction(callbackFunction)
+
+	mainFunction takes a callback as parameter.
+	callbackFunction is passed to mainfunction.
+	inside the mainFunction, the callbackFunction is executed.
+
+function greet(name,callback){
+        console.log("Hello "+name);
+        callback();
+    }
+    function goodbye(){
+        console.log("Goodbye");
+    }
+    greet("jyoshna",goodbye)
+
+Anonomous function:
+function greet(name,callback){
+        console.log("Hello "+name);
+        callback();
+    greet("jyoshna",function(){
+        console.log("python developer");
+
+       })  
+
+	We did not pass a named function like goodbye, Instead of that we define an anonymous function directly.
+
+VS CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//function sayGoodbye(){
+    //     console.log('Goodbye!')
+    // }
+    // greet('John',sayGoodbye)
+
+    // function mainFunction(callback){
+    //     console.log("Main function executed")
+    //     callback()
+    // }
+    // function callbackFunction(){
+    //     console.log("Callback function executed")
+    //     }
+    //     mainFunction(callbackFunction)
+
+    // function greet(name,callback){
+    //     console.log("Hello "+name);
+    //     callback();
+    // }
+    // function goodbye(){
+    //     console.log("Goodbye");
+    // }
+    // greet("jyoshna",goodbye)
+
+    // function greet(name,callback){
+    //     console.log("Hello "+name);
+    //     callback();
+    // }
+    // greet("jyoshna",function(){
+    //     console.log("python developer");
+    //    })  
+
+    function fetchData(callback){
+        console.log("Fetch data")
+    
+    setTimeout(function(){
+        console.log("Data fetched")
+    callback()
+    },2000);}
+    function processdata(){
+        console.log("Process data")
+    }
+    fetchData(processdata);
+    </script>
+</body>
+</html>
