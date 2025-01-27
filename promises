@@ -1,0 +1,174 @@
+Promise:
+•	It is a special javascript object that represents the eventual completion (or failure) of asynchronous operation.
+•	Promise means it may happen or not happen.
+1.	Pending: the initial state, the promise is still waiting for the operation to finish.
+2.	Fulfilled: The operation completed successfully
+3.	Rejected: The operation failed.
+Exp:
+To create a promise new Promise();
+The promise constructor takes a function with two parameters :
+Resolve: to mark as the promise is successful
+Reject: to mark it failed
+Handling:
+.then() method is called when the promise is fulfilled.
+It will receive from the parameter resolve();
+.catch() method is called when promise is rejected.
+It receives the result from the reject();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myPromise=new Promise((resolve,reject)=>{
+            let success=true
+            if(success){
+                resolve("Promise resolved")
+            }
+            else{
+                reject("Promise rejected")
+            }
+        });
+        myPromise.then((result)=>{
+            console.log(result)
+        })
+        .catch(error=>{
+            console.log(error)
+        })
+
+    </script>
+</body>
+</html>
+
+
+
+ let myPromise = new Promise((resolve, reject) => {
+            resolve(5);
+        })
+        myPromise.then((result) => {
+            console.log(result)
+            return result*2
+        })
+        .then((result) => {
+            console.log(result)
+            return result+3
+        })
+        .then((result) => {
+            console.log(result)
+        })
+        .catch(error => {
+            console.log(error)})
+Promise with set timeout:
+ let myPromise = new Promise((resolve, reject) => {
+            resolve(5);
+        })
+        myPromise.then((result) => {
+            console.log(result)
+            return new Promise((resolve) => {
+                setTimeout(() => resolve(result * 2), 1000); 
+            })
+        })
+        .then((result) => {
+            console.log(result)
+            return new Promise((resolve)=>{
+                setTimeout(() => resolve(result+3), 2000);
+            })
+        })
+        .then((result) => {
+            console.log(result)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+
+
+VS CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let myPromise=new Promise((resolve,reject)=>{
+        //     let success=true
+        //     if(success){
+        //         resolve("Promise resolved")
+        //     }
+        //     else{
+        //         reject("Promise rejected")
+        //     }
+        // });
+        // myPromise.then((result)=>{
+        //     console.log(result)
+        // })
+        // .catch(error=>{
+        //     console.log(error)
+        // })
+        // let myPromise = new Promise((resolve, reject) => {
+        //     resolve(5);
+        // })
+        // myPromise.then((result) => {
+        //     console.log(result)
+        //     return result*2
+        // })
+        // .then((result) => {
+        //     console.log(result)
+        //     return result+3
+        // })
+        // .then((result) => {
+        //     console.log(result)
+        // })
+        // .catch(error => {
+        //     console.log(error)
+        // })
+
+        // let myPromise = new Promise((resolve, reject) => {
+        //     resolve(5);
+        // })
+        // myPromise.then((result) => {
+        //     console.log(result)
+        //     return new Promise((resolve) => {
+        //         setTimeout(() => resolve(result * 2), 1000); 
+        //     })
+        // })
+        // .then((result) => {
+        //     console.log(result)
+        //     return new Promise((resolve)=>{
+        //         setTimeout(() => resolve(result+3), 2000);
+        //     })
+        // })
+        // .then((result) => {
+        //     console.log(result)
+        // })
+        // .catch(error => {
+        //     console.log(error)
+        // })
+
+        
+    </script>
+</body>
+</html>
+
+
