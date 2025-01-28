@@ -1,0 +1,115 @@
+DOM (Document object model)
+•	It is a programming interface in web development that allows us to interact and manipulate(change) the html documents.
+•	When the web page is loaded the browser create the DOM of the webpage.
+•	When an html file is loaded in to the browser, the javascript cannot understand the html document directly 
+•	DOM: is basically the representation of same html document but in a tree-like structure composed of objects
+•	HTML dom it allows javascript to access (to get) and modify all the elements in HTML document.
+ 
+Key points:
+1.Structure: the DOM represents the structure of html document as tree; each node in a tree represents the element, an attribute, text
+2.Manipulation: using js, you can interact with elements like buttons, headings, paragraphs.
+3. Event Handling: 
+4. W3C – world wide web consortium
+In DOM all elements are defined as objects
+	Property: is a value that you can set to the objects.(like changing the content of html element)
+	Method: an action (like add or delete)
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .a{
+      color:blue;
+    }
+    .b{
+      color:green;
+    }
+    .c{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  
+    <h1 class="b" id="a">mallesh</h1>
+    <h1 class="c" id="b"> Venkat</h1>
+    <h1 class="a" id="c">Ramya </h1>
+    <h1 class="c">Hari </h1>
+    <!-- <h1 class="a">Kavya</h1>
+    <h1 class="a">Anusha </h1>
+    <h1 class="c">Chiru </h1>
+    <h1 class="b">Ganesh </h1>
+    <h1 class="b">Ravi teja </h1> -->
+      
+<script>
+  /*let x=document.getElementById("a")
+  console.log(x)*/
+//   let x=document.getElementsByClassName('a')
+//   console.log(x)
+let x=document.getElementsByTagName('hi')
+// console.log(x)
+for(let i=0;i<x.length;i++){
+    console.log(x[i].id)
+}
+</script>
+  
+</body>
+</html>
+
+VS CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .a{
+      color:blue;
+    }
+    .b{
+      color:green;
+    }
+    .c{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  
+    <h1 class="b" id="a">mallesh</h1>
+    <h1 class="c" id="b"> Venkat</h1>
+    <h1 class="a" id="c">Ramya </h1>
+    <h1 class="c">Hari </h1>
+    <!-- <h1 class="a">Kavya</h1>
+    <h1 class="a">Anusha </h1>
+    <h1 class="c">Chiru </h1>
+    <h1 class="b">Ganesh </h1>
+    <h1 class="b">Ravi teja </h1> -->
+      
+<script>
+  /*let x=document.getElementById("a")
+  console.log(x)*/
+//   let x=document.getElementsByClassName('a')
+//   console.log(x)
+let x=document.getElementsByTagName('hi')
+// console.log(x)
+for(let i=0;i<x.length;i++){
+    console.log(x[i].id)
+}
+</script>
+  
+</body>
+</html>
