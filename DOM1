@@ -195,7 +195,18 @@ Create multiple elements:
 </body>
 </html>
 
+let title
+    for(let i=0;i<3;i++){
+        title=document.createElement('h1')
+        title.className="tt"
+        title.style.fronsize="24px"
+        title.textContent=i
+        console.log(title)
+
+    }
+
 VS CODE:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -231,12 +242,22 @@ VS CODE:
     // t.textContent="Iam in hyd"
     // console.log(t)
 
-    const t=["jyoshna","badulla","likitha"]
-    for(let i=0;i<t.length;i++){
-        let tt=document.createElement('h2')
-        tt.className="aa"
-        tt.textContent=t[i]
-        console.log(t)
+    // const t=["jyoshna","badulla","likitha"]
+    // for(let i=0;i<t.length;i++){
+    //     let tt=document.createElement('h2')
+    //     tt.className="aa"
+    //     tt.textContent=t[i]
+    //     console.log(tt)
+    // }
+
+    let title
+    for(let i=0;i<3;i++){
+        title=document.createElement('h1')
+        title.className="tt"
+        title.style.fronsize="24px"
+        title.textContent=i
+        console.log(title)
+
     }
 </script>
 </body>
