@@ -165,6 +165,7 @@ To create an html element:
 CreateElement()
 Document.createElement()
 The method takes an html tagnames, string parameters
+Create multiple elements:
 <!DOCTYPE html>
 <html lang="en">
 <head>
