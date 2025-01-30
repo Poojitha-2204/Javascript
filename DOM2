@@ -1,0 +1,98 @@
+# How to remove child elements from a parent node
+•	removeChild()=to remove the elements
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Removing childNode</h1>
+    <h2>Iam in hyd</h2>
+    <ul>
+        <li>
+            Ganesh
+        </li>
+        <li>
+            Ravi
+        </li>
+        <li>
+            Sam
+        </li>
+    </ul>
+    <script>
+        const ul = document.querySelector('ul');
+        const lists=document.querySelectorAll('li')
+        console.log(ul)
+        console.log(lists)
+        for(const list of lists){
+            console.log(`Removing: ${list.textContent}`)
+            ul.removeChild(list)
+            console.log(lists)
+            console.log(list)
+        }
+    </script>
+</body></html>
+To append a value:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Removing childNode</h1>
+    <h2>Iam in hyd</h2>
+    <div id=""a>
+        <h1>hari</h1>
+        <h1>vardhan</h1>
+
+     </div>
+     <div id="b">
+        <h2>sam</h2>
+        <h2>ravi</h2>
+        <script>
+            let n=document.createElement('h2')
+            n.textContent="chiru"
+            let p=document.getElementById('b')
+            console.log(p.innerText)
+            p.appendChild(n)
+            console.log(p.innerText)
+        </script>
+     </div>
+</body>
+</html>
+
+
+VSCODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Removing childNode</h1>
+    <h2>Iam in hyd</h2>
+    <div id=""a>
+        <h1>hari</h1>
+        <h1>vardhan</h1>
+
+     </div>
+     <div id="b">
+        <h2>sam</h2>
+        <h2>ravi</h2>
+        <script>
+            let n=document.createElement('h2')
+            n.textContent="chiru"
+            let p=document.getElementById('b')
+            console.log(p.innerText)
+            p.appendChild(n)
+            console.log(p.innerText)
+        </script>
+     </div>
+</body>
+</html>
