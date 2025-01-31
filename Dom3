@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="a">
+    <h1 id="s">Ravi</h1>
+    <h1 id ="r">Ram</h1>
+    <div id="b">
+      <h2>Sam</h2>
+      <h2>Venkat</h2>
+    </div>
+  </div>
+  <script>
+    // let n=document.createElement('h1')
+    // n.textContent='chiru'
+    // let nn=document.createElement('h1')
+    // nn.textContent='poojitha'
+    // let p=document.getElementById('a')
+    // let l=document.getElementById('r')
+    // p.insertBefore(n,l)
+    // p.insertBefore(nn,s)
+    let b=document.getElementById('a')
+    b.removeChild(a)
+  </script>
+</body>
+</html>
+
+Insert Before:
+insertBefore(): used to insert a new node before an existing node as child node of a specified parent. Requires a reference to both the new node and existing node you want to insert before.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="a">
+    <h1>Ravi</h1>
+    <h1 id ="r">Ram</h1>
+    <h1></h1>
+    <div id="b">
+      <h2>Sam</h2>
+      <h2>Venkat</h2>
+    </div>
+  </div>
+  <script>
+    let n=document.createElement('h1')
+    n.textContent='chiru'
+    let p=document.getElementById('a')
+    let l=document.getElementById('r')
+    p.insertBefore(n,l)
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="a">
+    <h1 id="s">Ravi</h1>
+    <h1 id ="r">Ram</h1>
+    <h1></h1>
+    <div id="b">
+      <h2>Sam</h2>
+      <h2>Venkat</h2>
+    </div>
+  </div>
+  <script>
+    let n=document.createElement('h1')
+    n.textContent='chiru'
+    let nn=document.createElement('h1')
+    nn.textContent='poojitha'
+    let p=document.getElementById('a')
+    let l=document.getElementById('r')
+    p.insertBefore(n,l)
+    p.insertBefore(nn,l)
+  </script>
+</body>
+</html>
+
+Output: 
+Ravi
+chiru
+poojitha
+Ram
+Sam
+Venkat
+Remove element:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="a">
+    <h1 id="s">Ravi</h1>
+    <h1 id ="r">Ram</h1>
+    <div id="b">
+      <h2>Sam</h2>
+      <h2>Venkat</h2>
+    </div>
+  </div>
+  <script>
+    let b=document.getElementById('a')
+    b.removeChild(a)
+  </script>
+</body>
+</html>
+
