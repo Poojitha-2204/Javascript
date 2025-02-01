@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let age = parseInt(prompt("Enter Your Age: "));
+        // let citizen = prompt("Are You a Citizen? (yes/no)");
+        // let citizenship=prompt("Did you pass the citizenship Test? (yes/no)")
+        // if (age >= 18 && citizenship.toLowerCase() === "yes") {
+        //     document.write("You Are Eligible To Vote");
+        // } else {
+        //     document.write("You Are Not Eligible To Vote");
+        // }
+
+        let amount=parseInt(prompt("Enter the amount: "))
+        let premiumMember=prompt("Are you a premium menber?(yes/no)")
+        if(amount>=100){
+            a=amount*0.20
+            document.write("Discount: "+a+"$")
+        }
+        else if(amount>50 && amount<100){
+            a=amount*0.10
+            document.write("Discount: "+a+"$")
+        }
+        else if(premiumMember==="yes"){
+            c=amount*a*0.05
+            document.write("Discount: "+c+"$")
+        }
+        else{
+            document.write("No discount")
+        }
+    </script>
+</body>
+</html>
+
+JavaScript revision practice questions:
+1.	Voting Eligibility System
+You are tasked with building a system to check whether a person is eligible to vote. The system follows these rules:
+•	A person must be at least 18 years old to vote
+•	If the person is a citizen, they are eligible to vote
+•	If the person is not a citizen but has passed a citizenship test, they are eligible to vote
+•	If the person is below 18 no eligible
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = parseInt(prompt("Enter Your Age: "));
+        let citizen = prompt("Are You a Citizen? (yes/no)");
+        let citizenship=prompt("Did you pass the citizenship Test? (yes/no)")
+        if (age >= 18 && citizenship.toLowerCase() === "yes") {
+            document.write("You Are Eligible To Vote");
+        } else {
+            document.write("You Are Not Eligible To Vote");
+        }
+    </script>
+</body>
+</html>
+
+
+2.	Discount Eligibility
+An online store offers a discount system based on the following condition:
+•	A customer who spends more than Rs.100 gets a 20% discount.
+•	A customer who spends a more than Rs.50 but less than or equal to Rs.100 gets a 10% discount
+•	If the customer is a premium member they  receive an extra 5% discount.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let amount=parseInt(prompt("Enter the amount: "))
+        let premiumMember=prompt("Are you a premium menber?(yes/no)")
+        if(amount>=100){
+            a=amount*0.20
+            document.write("Discount: "+a+"$")
+        }
+        else if(amount>50 && amount<100){
+            a=amount*0.10
+            document.write("Discount: "+a+"$")
+        }
+        else if(premiumMember==="yes"){
+            c=amount*a*0.05
+            document.write("Discount: "+c+"$")
+        }
+        else{
+            document.write("No discount")
+        }
+    </script>
+</body>
+</html>
+
+
+
+React.Js:
+•	It is a javascript is a library 
+•	It is a single page application
+•	Reusable
+•	
+
+
+
