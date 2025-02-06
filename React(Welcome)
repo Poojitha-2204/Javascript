@@ -1,0 +1,114 @@
+Project folder:
+Public/index.html: The main html file that serves as the entry point for app.
+Src/index.js: The js entry point where DOM is rendered.
+Src/App.js: The main component that serves as the root of the component tree.
+Src/components: A folder to store the reusable component.
+Components: core building blocks of a react application.
+The help to create the reusable code.
+If anything goes wrong then we can easily find the error.
+
+Two types of components:
+1.	Class component
+2.	Function component
+App.js
+import React  from 'react';
+import './App.css'
+
+const Welcome =()=> <h1 className='message'>Hello</h1>
+function App(){
+  return (
+    <div className="App">
+      <Welcome />
+    </div>
+    );
+}
+export default App;
+
+App.css:
+.message{
+  color: blue;
+  font-size: 40px;
+  background-color: brown;
+  text-align: center;
+  width: auto;
+  margin-left: 80px;
+}
+
+//Hello!
+
+
+Welcom.js:
+import React from "react";
+const Welcome =(props)=>{
+    const {name,greeting}=props
+    return (
+       <h1 className="message">
+        {greeting} {name}
+       </h1>
+       );
+}
+export default Welcome;
+
+App.js:
+import React from 'react';
+// import './App.css'
+import Welcome from './Welcome';
+const App=()=>{
+  return(
+    <div style={{textAlign:'center',color:'red'}}>
+      <Welcome name="Poojitha" greeting="Hello" />
+      <Welcome/>
+    </div>
+    
+  )
+}
+export default App;
+
+Vs code:
+import React from 'react';
+// import './App.css'
+import Welcome from './Welcome';
+const App=()=>{
+  return(
+    <div style={{textAlign:'center',color:'red'}}>
+      <Welcome name="Poojitha" greeting="Hello" />
+      <Welcome/>
+    </div>
+    
+  )
+}
+
+// const Welcome =()=> <h1 className='message'>Hello!</h1>
+// function App(){
+//   return (
+//     <div className="App">
+//       <Welcome />
+//     </div>
+//     );
+// }
+export default App;
+
+import React from "react";
+const Welcome =(props)=>{
+    const {name,greeting}=props
+    return (
+       <h1 className="message">
+        {greeting} {name}
+       </h1>
+       );
+}
+export default Welcome;
+
+.message{
+  color: white;
+  font-size: 80px;
+  background-color: pink;
+  text-align:center;
+  width: auto;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 50px;
+  padding-top: 20px;
+  padding-bottom:80px;
+  border-radius:20px;
+}
