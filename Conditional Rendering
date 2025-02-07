@@ -1,0 +1,173 @@
+Conditional Rendering: 
+If, else:
+// import React from 'react';
+// import Greeting from './Greeting';
+// import './App.css';
+// function App() {
+//   const isLoggedIn = true; 
+//   return (
+//     <div className="App">
+//       <Greeting isLoggedIn={isLoggedIn} />
+//     </div>
+//   );
+// }
+export default App;
+
+import React from "react";
+function Greeting({isLoggedIn}){
+    if(isLoggedIn){
+        return <h1 className="greeting">Welcome back!</h1>;
+        }
+        return <h1 className="login">Please sign in</h1>;
+        }
+export default Greeting;
+
+.greeting{
+  color: lightcoral;
+  font-size: 80px;
+  background-color:black;
+  text-align:center;
+  width: auto;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 60px;
+  padding-top: 20px;
+  padding-bottom:80px;
+  border-radius:20px;
+}
+.login{
+  color: black;
+  font-size: 80px;
+  background-color: pink;
+  text-align:center;
+  width: auto;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 50px;
+  padding-top: 20px;
+  padding-bottom:80px;
+  border-radius:20px;
+}
+
+Output: 
+Welcome back!
+
+map(): element in array
+function will be applied 
+import React from "react";
+const FruitList=()=>{
+    const fruits=["apple","banana","cherry"];
+    return(
+        <div>
+            <h1>My Fruits</h1>
+            <ul>
+                {fruits.map((fruit,index)=>(
+                    <li key={index}>{fruit}</li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+export default FruitList;
+
+import React from 'react';
+import FruitList from './fruitList';
+function App(){
+  return (
+    <div className="App">
+      <FruitList/>
+    </div>
+    );
+}
+export default App;
+
+//My Fruits
+•	apple
+•	banana
+•	cherry
+
+vs code:
+// // import './App.css'
+// import Welcome from './Welcome';
+// const App=()=>{
+//   return(
+//     <div style={{textAlign:'center',color:'red'}}>
+//       <Welcome name="Poojitha" greeting="Hello" />
+//       <Welcome/>
+//     </div>
+    
+//   )
+// }
+// import React from 'react';
+// import FruitList from './fruitList';
+// function App(){
+//   return (
+//     <div className="App">
+//       <FruitList/>
+//     </div>
+//     );
+// }
+import React from 'react';
+import Greeting from './Greeting';
+import './App.css';
+function App() {
+  const isLoggedIn = true; 
+  return (
+    <div className="App">
+      <Greeting isLoggedIn={isLoggedIn} />
+    </div>
+  );
+}
+export default App;
+
+import React from "react";
+function Greeting({isLoggedIn}){
+    if(isLoggedIn){
+        return <h1 className="greeting">Welcome back!</h1>;
+        }
+        return <h1 className="login">Please sign in</h1>;
+        }
+export default Greeting;
+
+import React from "react";
+const FruitList=()=>{
+    const fruits=["apple","banana","cherry"];
+    return(
+        <div>
+            <h1>My Fruits</h1>
+            <ul>
+                {fruits.map((fruit,index)=>(
+                    <li key={index}>{fruit}</li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+export default FruitList;
+
+.greeting{
+  color: lightcoral;
+  font-size: 80px;
+  background-color:black;
+  text-align:center;
+  width: auto;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 60px;
+  padding-top: 20px;
+  padding-bottom:80px;
+  border-radius:20px;
+}
+.login{
+  color: black;
+  font-size: 80px;
+  background-color: pink;
+  text-align:center;
+  width: auto;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 50px;
+  padding-top: 20px;
+  padding-bottom:80px;
+  border-radius:20px;
+}
