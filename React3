@@ -1,0 +1,215 @@
+c.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex ;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        .light-bulb{
+            width:150px
+        }
+        .button{
+            margin-top: 20px;
+            padding: 10px 20px ;
+            font-size: 10px;
+            cursor: pointer;
+
+        }
+
+    </style>
+</head>
+<body id="body">
+    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png" alt ="" class="light-bulb" id="bulbImage"/>
+
+    <button class="button" id="toggleButton" onClick="toggleLight()">Turn On</button>
+
+    <script>
+        let isOn=false;
+        function toggleLight(){
+            const body=document.getElementById("body")
+            const bulbImage=document.getElementById('bulbImage')
+            const toggleButton=document.getElementById('toggleButton')
+
+            if(isOn=!isOn);
+            if(isOn){
+                body.style.backgroundColor='lightyellow ';
+                bulbImage.src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png";
+                toggleButton.innerText='Turn Off';
+            }else{
+                body.style.backgroundColor='black';
+                bulbImage.src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png";
+                toggleButton.innerText="Turn On";
+
+            }
+
+
+            }
+
+        
+    </script>
+    
+</body>
+</html>
+
+
+ Turn Off
+
+
+
+Web page:
+State:
+State in react: In react state is like a container that holds the data or information for a component.
+This data can be changed over time based on user actions or events.
+Why state is important:
+It allows the component to remember the things.
+1.	Functional Component
+Syntax: const[statevariable, setStatefunction]=useState(initialvalue)
+Statevariable: holds the current state.
+setStatefunction: used to update the state.
+Initialvalue: renders initial value
+2.	Class Component
+
+VS CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Bulb Toggle</title>
+    <style>
+        :root {
+            --bulb-off: #fff;
+            --bulb-on: #ffeb3b;
+            --bg-off: #1e1e1e;
+            --bg-on: #fff9c4;
+            --button-bg: #ffcc00;
+            --button-border: #b8860b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transition: background 1s ease-in-out;
+            background-color: var(--bg-off);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .bulbWrapper {
+            position: relative;
+        }
+
+        .bulbImage {
+            height: 300px;
+            width: auto;
+            transition: filter 0.5s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .glow {
+            filter: drop-shadow(0 0 30px var(--bulb-on));
+            transform: scale(1.1);
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            background: linear-gradient(145deg, var(--button-bg), #ffdf80);
+            border: 3px solid var(--button-border);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            outline: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button:hover {
+            background: linear-gradient(145deg, #ffdf80, var(--button-bg));
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:active {
+            transform: scale(0.95);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .lightEffect {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 235, 59, 0.4) 0%, rgba(255, 235, 59, 0) 80%);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .lightEffect.active {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bulbWrapper">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png" class="bulbImage" id="bulbImage" alt="Bulb">
+            <div class="lightEffect" id="lightEffect"></div>
+        </div>
+        <button class="button" id="toggleButton" onclick="toggleLight()">Turn On</button>
+    </div>
+
+    <script>
+        let isOn = false;
+
+        function toggleLight() {
+            const body = document.body;
+            const bulbImage = document.getElementById('bulbImage');
+            const toggleButton = document.getElementById('toggleButton');
+            const lightEffect = document.getElementById('lightEffect');
+
+            isOn = !isOn;
+
+            if (isOn) {
+                body.style.backgroundColor = 'var(--bg-on)';
+                bulbImage.src = 'https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png';
+                toggleButton.innerText = 'Turn Off';
+                bulbImage.classList.add('glow');
+                lightEffect.classList.add('active');
+            } else {
+                body.style.backgroundColor = 'var(--bg-off)';
+                bulbImage.src = 'https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png';
+                toggleButton.innerText = 'Turn On';
+                bulbImage.classList.remove('glow');
+                lightEffect.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>
