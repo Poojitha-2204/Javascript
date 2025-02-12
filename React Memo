@@ -48,6 +48,11 @@ function ChildA() {
 export default memo(ChildA);
 
 
+Built-in-methods:
+input()
+len()
+Str()
+
 App.js:
 import { useState } from "react";
 import ChildA from "./ChildA"
