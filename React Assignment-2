@@ -35,3 +35,39 @@ function Profile() {
 }
 
 export default App;
+
+
+import React from "react";
+
+function App() {
+  const user = {
+    name: "Poojitha",
+    email: "2211cs010263@gmail.com"
+  };
+
+  return <User1 user={user} />;
+}
+
+function User1({ user }) {
+  return <User2 user={user} />;
+}
+
+function User2({ user }) {
+  return <User3 user={user} />;
+}
+
+function User3({ user }) {
+  return <Profile user={user} />;
+}
+
+function Profile({ user }) {
+  return (
+    <div>
+      
+      <p>Name: {user.name}</p>
+      <p>Email: {user.email}</p>
+    </div>
+  );
+}
+
+export default App;
