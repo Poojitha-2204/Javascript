@@ -1,0 +1,24 @@
+useState: changes the state; React will render the component and update the state.
+useEffect: You can use useEffect to store the list items in local storage so that they persist even after refreshing the page.
+useRef: You can use useRef to automatically focus on the input field when the page loads or when an item is added.
+import React, { useState, useEffect, useRef } from 'react';
+
+function CounterWithPrev() {
+  const [count, setCount] = useState(0);
+  const prevCountRef = useRef();
+
+  useEffect(() => {
+    prevCountRef.current = count;
+  }, [count]);
+
+  return (
+    <div>
+      <p>Current count: {count}</p>
+      <p>Previous count: {prevCountRef.current}</p>
+      <button onClick={() => setCount(count + 1)}>Increase Count</button>
+    </div>
+  );
+}
+
+export default CounterWithPrev;
+
