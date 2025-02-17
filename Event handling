@@ -1,0 +1,90 @@
+•	Event handling: how you make your app do some thing when the user interacts with it, Like clicking a button, submitting a form.
+1.	Clicking a button(onClick)
+function App(){
+  const handleClick=()=>{
+    alert("Button Clicked")
+  }
+  return (
+    <button onClick ={handleClick}>Click Me</button>
+  )
+}
+export default App;
+
+
+
+
+2.	Pressing a key
+Key is pressed on the key board:
+Syntax: onKeyDown={keyDownFunction}
+import React,{ useState } from "react";
+import "./App.css"
+function App(){
+
+  const[key, setKey]=useState("");
+
+  const handleKeyDown=(event)=>{
+    setKey(event.key);
+  }
+
+  return(
+    <div className="App">
+      <h1>Welcome to Keyboard!</h1>
+      {key && <h2>Pressed key : {key}</h2>}
+      <input type="text" onKeyDown={handleKeyDown} placeholder="Press any key"/>
+    </div>
+    )
+}
+export default App;
+
+3.	Moving the mouse
+import React, { useState } from 'react';
+function App() {
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+  return (
+    <div>
+      <button
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          backgroundColor: isHovered ? 'white' : 'black',
+          color: isHovered ? 'coral' : 'white',
+        }}
+      >Hover me</button>
+    </div>
+  );
+}
+
+export default App;
+
+
+4.	Typing a text box(onChange)
+Target: property of an event object.
+Event.target.value: used to access the value of input elements buttons,forms
+Event.target: refers the element that triggered the event
+setText: used to update the text.
+import React,{useState} from "react";
+function App(){
+  const [text,setText]=useState("")
+
+  const handleChange=(event)=>{
+    setText(event.target.value)
+  }
+  return(
+    <div>
+      <input type="text" value={text} onChange={handleChange} />
+      <p>Your text: {text}</p>
+    </div>
+  )
+}
+export default App;
+
+  How to use events:
+•	Use camelCase for event names. 
+•	Pass a function to an event.
+•	The function will run when the event occurs.
