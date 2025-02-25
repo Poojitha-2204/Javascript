@@ -1,0 +1,78 @@
+Flex: 
+•	Dimensional(directional)
+•	Easy and flexible
+•	It has limited tools
+•	Display: flex
+Grid: 
+•	2- Dimensional
+•	Complex but very powerful 
+•	It has advanced tools
+•	Display: grid
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    .parent{
+        height: 100vh;
+        display: grid;
+        grid-template-rows:15% 70% 15% ;
+        grid-template-columns: 15% 70% 15%;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: coral;
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+    .aside{
+        background-color: rgba(92, 92, 185, 0.484);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-row: 2/3;
+        grid-column:1/4;
+       
+    }
+    .main{
+        background-color:wheat;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightmenu{
+        background-color: rgba(182, 58, 143, 0.486);
+        grid-row: 2/3;
+        grid-column:3/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+    .footer{
+        background-color: blueviolet;
+        grid-row: 3/4;
+        grid-column:1/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+</style>
+</head>
+<body>
+   <div class="parent">
+   <div class="header">Header</div>
+   <div class="aside">Aside</div>
+   <div class="main">Main</div>
+  <div class="rightmenu">Right Menu</div>
+  <div class="footer">Footer</div>
+</div>
+</body>
+</html>
